@@ -6,12 +6,12 @@ import styles from '../styles/layout.module.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-  <>
-    <Header />
-      <section className={styles.section}>
+  <div className={styles.layoutBody}>
+    <Header className={styles.header} />
+      <section className={styles.main}>
         <Component {...pageProps} />
       </section>
-    <Footer />   
-  </>
+    <Footer className={styles.footer} />   
+  </div>
   ) 
 }

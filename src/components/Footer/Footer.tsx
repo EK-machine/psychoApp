@@ -1,6 +1,12 @@
-const Footer:React.FC = () => {
+import styles from './Footer.module.css'
+
+export interface FooterProps {
+  className: string;
+}
+
+const Footer:React.FC<FooterProps> = ({className}) => {
   return (
-    <footer>Footer</footer>
+    <footer className={`${styles.footerWrapper} ${!!className === true && className}`}>Footer</footer>
   )
 }
 
