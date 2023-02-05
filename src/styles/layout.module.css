@@ -1,0 +1,9 @@
+.section {
+    border: 1px solid greenyellow;
+}
+
+@media screen and (min-width: 769px) {
+    .section {
+        border: 1px solid var(--primary-glow);
+    }
+}
